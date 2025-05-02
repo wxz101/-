@@ -7,8 +7,8 @@ from config import BASE_PATH, get_test_transform
 
 
 def test_model(model, loader, device='cuda'):
-    # model.to(device)
-    # model.eval()
+    model.to(device)
+    model.eval()
 
     # 类别名称
     position_names = ['0m', '1m', '2m', '3m', '4m']
